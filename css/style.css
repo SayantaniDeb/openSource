@@ -12,4 +12,7 @@ body{
   .fontgoog{
     font-family: 'Merriweather', serif;
   }
-  
+
+  .ques{
+    min-height: 100vh;
+  }

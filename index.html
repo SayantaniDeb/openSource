@@ -55,11 +55,38 @@
      <h4>
          What is Hacktoberfest?
         <div class="video-container container">
-            <iframe width="853" height="480" src="https://www.youtube.com/watch?v=F77rVABPsx4" frameborder="0" allowfullscreen></iframe>
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/F77rVABPsx4" frameborder="0" allowfullscreen></iframe>
           </div>
 
      </h4>
- </div>   
+ </div> 
+ 
+ <div class="container ques">
+    <br>
+    <br>
+    <br>
+   
+    <ul class="collapsible">
+
+        <li>
+            
+          <div class="collapsible-header"><i class="material-icons">filter_drama</i>Why contribute to this repository?</div>
+          <div class="collapsible-body"><span> <ul>
+            <li>Beginner-friendly</li>
+            <li>Create your first Pull Request on GitHub</li>
+            <li>Chance of receiving a T-Shirt for participating in the Hacktoberfest</li>
+            </ul></span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+      </ul>
+</div>
 
  <footer class="page-footer green">
     <div class="container ">
@@ -116,7 +143,16 @@
       $(document).ready(function(){
           $('.sidenav').sidenav()
       })
-      
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
   </script>
 </body>
 </html>
